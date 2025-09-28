@@ -6812,7 +6812,7 @@ rayParms.FilterDescendantsInstances = {LocalPlayer.Character}
 rayParms.FilterType = Enum.RaycastFilterType.Blacklist 
 
 Window = Library:CreateWindow({
-    Title = 'mshax v4.5 | MM2',
+    Title = 'Origin v4.5 | MM2',
     Center = true,
     AutoShow = true
 })
@@ -7343,7 +7343,7 @@ SettingsBox:AddToggle("ShowCustomCursor", {
 
 
 function Unload()
-game.Players.LocalPlayer:SetAttribute("mshaxLoaded",false)
+game.Players.LocalPlayer:SetAttribute("OriginLoaded",false)
 
 for _, con in pairs(Connections) do
 con:Disconnect()
