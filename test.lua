@@ -124,7 +124,12 @@ end
 --------------------------------------------------------------------------------
 --- GAME-SPECIFIC LOGIC BLOCKS
 --------------------------------------------------------------------------------
-
+    local Window = Library:CreateWindow({Title=" 倹 Origin Hub",Footer="version: 1.0.1",NotifySide="Right",ShowCustomCursor=true})
+   if game.PlaceId == 189707 then
+	local Tabs = {Main=Window:AddTab("Main","user"),["UI Settings"]=Window:AddTab("UI Settings","settings")}
+	local LeftGroupBox = Tab:AddLeftGroupbox("Teleports", "wrench")
+local RightGroupBox = Tab:AddRightGroupbox("Other")
+end
 -- Game: 99 Nights
 if game.PlaceId == 126509999114328 then 
     local Options = Library.Options;
